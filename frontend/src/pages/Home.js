@@ -6,6 +6,7 @@ import Navbar from "../components/Navbar";
 import { useNavigate } from "react-router-dom";
 
 
+
 const Home = () => {
   const userInfo = localStorage.getItem("userInfo");
   const navigate = useNavigate();
@@ -21,7 +22,6 @@ const Home = () => {
       <Navbar />
       <Header />
       <About />
- 
       <Contact />
     </>
   );

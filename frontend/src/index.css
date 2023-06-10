@@ -288,25 +288,16 @@ bottom: 40%;
     margin: 0 30px;
   }
 
-    /* services */
-.slides{
-  display: flex;
-  width: 100%;
-  height: 100vh;
-  background-color: #fff;
-}
-.slide{
-  width: 80%;
-  height: 80%;
-  background: #fff;
-}
-.slider-container{
-  padding: 20px;
-  width: 100vw;
-  height: 100vh;
-}
+
+
 .color-theme{
   margin: 30px 0;
+}
+
+/*scriptures*/
+
+.btn-outline-dark{
+  width: 50px !important;
 }
 @media screen and (max-width:992px) {
   .row{

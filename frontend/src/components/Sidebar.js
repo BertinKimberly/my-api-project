@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import { FaHome, FaMoon, FaQuestion, FaSearch, FaSun } from "react-icons/fa";
+import { FaBook, FaHome, FaMoon, FaQuestion, FaSearch, FaSun } from "react-icons/fa";
 import { Link, Navigate, useNavigate } from "react-router-dom";
 import { BiLogOut } from "react-icons/bi";
+import Scriptures from "../pages/Scriptures";
 
 const Sidebar = () => {
   const [colorTheme, setColorTheme] = useState(false);
@@ -16,6 +17,11 @@ const Sidebar = () => {
       <span>
         <Link to="/home">
           <FaHome size={20} />
+        </Link>
+      </span>
+      <span>
+        <Link to="/scriptures">
+          <FaBook/>
         </Link>
       </span>
       <span>
