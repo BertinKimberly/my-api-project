@@ -299,6 +299,7 @@ bottom: 40%;
 .btn-outline-dark{
   width: 50px !important;
 }
+
 @media screen and (max-width:992px) {
   .row{
     display: flex;

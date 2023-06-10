@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { FaSearch } from "react-icons/fa";
+import ScriptureCard from "../components/ScriptureCard";
 
 const Scriptures = () => {
   const [input, setInput] = useState("");
@@ -20,7 +21,11 @@ const Scriptures = () => {
       const response = await fetch(url, options);
       const result = await response.json();
       console.log(result);
-      setScriptures(result);
+      if (Array.isArray(result)) {
+        setScriptures(result);
+      } else {
+        setScriptures([]);
+      }
     } catch (error) {
       console.error(error);
     }
@@ -54,7 +59,9 @@ const Scriptures = () => {
       </div>
       <div>
         {scriptures.map((item, idx) => (
-          <h3 key={idx}>{item.text}</h3>
+          <div key={idx} >
+            <ScriptureCard item={item} />
+          </div>
         ))}
       </div>
     </div>
