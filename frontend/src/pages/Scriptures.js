@@ -32,6 +32,7 @@ const Scriptures = () => {
   };
 
   useEffect(() => {
+    console.log(scriptures);
     if (searchTerm) {
       fetchVerses();
     }
@@ -59,7 +60,7 @@ const Scriptures = () => {
       </div>
       <div>
         {scriptures.map((item, idx) => (
-          <div key={idx} >
+          <div key={idx}>
             <ScriptureCard item={item} />
           </div>
         ))}
