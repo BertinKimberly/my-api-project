@@ -42,19 +42,7 @@ const Navbar = () => {
               About
             </Link>
           </li>
-          <li>
-            <Link
-              onClick={handleClick}
-              spy={true}
-              smooth={true}
-              offset={50}
-              duration={500}
-              delay={500}
-              to="scriptures"
-            >
-              Scriptures
-            </Link>
-          </li>
+        
           <li>
             <Link
               onClick={handleClick}
